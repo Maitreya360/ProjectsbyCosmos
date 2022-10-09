@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body{
+            background:blue;
+        }
+        #element{
+            position:absolute;
+            top:-400px;
+            cursor: pointer;
+            left: 50%;
+            border: solid 2px black;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            background-color:rgb(255, 16, 16);
+            animation: drop 6s ;
+            animation-iteration-count:infinite;
+        }
+
+        @keyframes drop{
+            0%{opacity: 90}
+            100%{transform: translateY(1130px)}
+        }
+
+        #ground{
+            position: absolute;
+            bottom: 0px;
+            background: greenyellow;
+            width: 1440px;
+            height: 50px;
+        }
+
+    </style>
+
+    <div id="element" onclick = myf() ></div>
+    <div id="ground"></div>
+
+    
+
+    <script>
+
+        res()
+        let a = -1
+        let b = a+1
+
+        function res(){
+            console.log("res")
+            let a = b
+        }
+
+        function myf(){
+            console.log(a)
+        }
+
+        
+
+    </script>
+
+</body>
+</html>

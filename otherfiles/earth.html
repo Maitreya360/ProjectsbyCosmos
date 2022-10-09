@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            background: url(images/bg-space.jpg);
+            background-size: cover;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            transform-style: preserve-3d;
+        }
+
+        .earth h2{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+            margin: -35%;
+        }
+
+        .earth h2:hover{
+            transition: 1.3s;
+            cursor: default;
+            color: rgb(255, 0, 0);
+            box-shadow: #ff4040;
+        }
+
+        .earth:hover{
+            animation: animate 0s linear infinite;
+            border-radius: 0%;
+            transition: 1.3s;
+            width: 840px;
+            height: 340px;
+        }
+
+        .earth{
+            transition: 1.3s;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 300px;
+            height: 300px;
+            background: url(images/earth.jpg);
+            border-radius: 50%;
+            background-size: cover;
+            background-repeat: repeat-x;
+            box-shadow: inset 0 0 20px rgba(0, 0, 0, 1),0 0 50px#4069ff;
+            animation: animate 40s linear infinite;
+        }
+        @keyframes animate {
+            0%{
+                background-position: 0 0;
+            }
+            100%{
+                background-position: -750px 0;
+            }
+        }
+
+        .brightness{
+            width: 2000px;
+            height: 789px;
+            background-color: rgba(0, 0, 0, .3);
+        }
+
+    </style>
+    <section>
+        <div class="earth">
+            <H2>Earth</H2>
+        </div>
+        <div class="brightness">
+
+        </div>
+    </section>
+</body>
+</html>

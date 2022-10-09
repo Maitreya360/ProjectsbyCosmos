@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Bar</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #000;
+        }
+        .loader{
+            position: relative;
+            width: 300px;
+            height: 10px;
+            background: white;
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #0005)
+        }
+        .loader::before{
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgb(203, 46, 72), darkblue, lime, yellow, rgb(203, 46, 72));
+            animation: lb 20s linear infinite;
+            background-size: 500%;
+        }
+        .loader::after{
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgb(203, 46, 72), darkblue, lime, yellow, rgb(203, 46, 72));
+            animation: lb 20s linear infinite;
+            background-size: 500%;
+            filter: blur(20px);
+        }
+
+        @keyframes lb {
+            0%{
+                background-position: 0 0;
+            }
+            0%{
+                background-position: 500% 0;
+            }
+        }
+
+    </style>
+    <div class="loader"></div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: monospace;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #1e1542, #167fd5);
+        }
+        h2{
+            position: relative;
+            display: flex;
+            gap: 5px;
+            color: white;
+            font-size: 8em;
+        }
+        h2 span{
+            position: relative;
+            filter: blur(5px);
+            padding: 0 5px;
+        }
+        h2 span:hover{
+            filter: blur(0);
+            transition: .1s;
+            cursor: pointer;
+        }
+    </style>
+    <h2>
+        <span><i></i>C</span>
+        <span><i></i>S</span>
+        <span><i></i>S</span>
+        <span><i></i>.</span>
+        <span><i></i>F</span>
+        <span><i></i>O</span>
+        <span><i></i>C</span>
+        <span><i></i>U</span>
+        <span><i></i>S</span>
+    </h2>
+</body>
+</html>
