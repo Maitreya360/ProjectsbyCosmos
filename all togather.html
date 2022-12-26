@@ -24,6 +24,7 @@
         body{
             background: url(at-bg.jpg);
             background-size: cover;
+            background-repeat: no-repeat;
         }
         .wel{
             display: flex;
@@ -33,15 +34,97 @@
             padding: 20px;
             font-family: monospace;
         }
-        a{
-            display: flex;
-            justify-content: center;
+        .focus_btn{
+            background-color: rgba(0, 0, 0, 0.27);
+            border: #000 3px solid;
+            border-radius: 150px    ;
+            position: absolute;
+            top: 160px;
             align-items: center;
-            text-decoration: none;
+            justify-content: center;
+            display: flex;
+            width: 250px;
+            left: 40.4%;
             color: #000;
-            font-size:47px;
-            padding: 10px;
-            font-family: monospace;
+            text-decoration: none;
+            font-size: 60px;
+        }
+
+        .loading_btn{
+            background-color: rgba(0, 0, 0, 0.27);
+            border: #000 3px solid;
+            border-radius: 150px    ;
+            position: absolute;
+            top: 250px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 310px;
+            left: 38%;
+            color: #000;
+            text-decoration: none;
+            font-size: 60px;
+        }
+
+        .snakegame_btn{
+            background-color: rgba(0, 0, 0, 0.27);
+            border: #000 3px solid;
+            border-radius: 150px    ;
+            position: absolute;
+            top: 510px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 350px;
+            left: 36.7%;
+            color: #000;
+            text-decoration: none;
+            font-size: 60px;
+        }
+        .earth_btn{
+            background-color: rgba(0, 0, 0, 0.27);
+            border: #000 3px solid;
+            border-radius: 150px    ;
+            position: absolute;
+            top: 420px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 250px;
+            left: 40.4%;
+            color: #000;
+            text-decoration: none;
+            font-size: 60px;
+        }
+        .lock_up_btn{
+            background-color: rgba(0, 0, 0, 0.27);
+            border: #000 3px solid;
+            border-radius: 150px    ;
+            position: absolute;
+            top: 334px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 250px;
+            left: 40.4%;
+            color: #000;
+            text-decoration: none;
+            font-size: 60px;
+        }
+        .Rocket-animation{
+            background-color: rgba(0, 0, 0, 0.27);
+            border: #000 3px solid;
+            border-radius: 150px    ;
+            position: absolute;
+            top: 604px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 450px;
+            left: 33.4%;
+            color: #000;
+            text-decoration: none;
+            font-size: 60px;
         }
     </style>
 
@@ -49,11 +132,12 @@
 
     <div class="wel"><h2>My HTML Projects</h2></div>
     <div>
-        <a href="otherfiles/focus.html">Focus</a><br>
-        <a href="otherfiles/loading bar.html">Loading Bar</a>
-        <a href="otherfiles/lock up img.html">Lock up</a>
-        <a href="otherfiles/earth.html">Earth</a>
-        <a href="otherfiles/SnakeGame/SnakeGame/index_sg.html">Snake Game</a>
+        <a href="otherfiles/focus.html" class="focus_btn">Focus</a>
+        <a href="otherfiles/loading bar.html" class="loading_btn">Loading Bar</a>
+        <a href="otherfiles/lock up img.html" class="lock_up_btn">Lock up</a>
+        <a href="otherfiles/earth.html" class="earth_btn">Earth</a>
+        <a href="otherfiles/SnakeGame/SnakeGame/index_sg.html" class="snakegame_btn">Snake Game</a>
+        <a href="otherfiles/rocket_animation.html" class="Rocket-animation">Rocket-animation</a>
     </div>
     <div class="moon"></div>
     
